@@ -1,0 +1,172 @@
+body {
+    margin: 0px;
+    font-family: 'Quicksand', sans-serif;
+}
+
+#navbar {
+    /* background-image: url('./images/header\ pattern\ image.png'); */
+    opacity: 0.8;
+    background-color: #000000;
+    mix-blend-mode: overlay;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#navbar__logo {
+    width: 134px;
+    height: 36px;
+    margin: 9.5px 0px 10.5px 24px;
+}
+
+#menulist li a {
+    text-decoration: none;
+}
+
+#menulist {
+    margin: 0px;
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.menulist__menu {
+    color: #3FD28B;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 19px 32px 19px 0px;
+}
+
+.menulist__menu a {
+    color: inherit;
+}
+
+#main {
+    margin: 24px 24px 32px 24px;
+}
+
+#courseclass {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #8DDC97;
+    height: 64px;
+    margin-top: 24px;
+    /* align-items: ; */
+    /* width: inherit; */
+}
+
+
+.subselection {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 50%;
+    justify-content: center;
+}
+
+.subselection--bottom-black {
+    border-bottom: 4px solid #222222;
+}
+
+.subselection p {
+    color: #222222;
+    font-size: 24px;
+    height: 30px;
+    font-weight: 800;
+}
+
+.subselection img {
+    height: 32px;
+    width: 21px;
+}
+
+.subselection .text-black-16 {
+    color: #222222;
+    font-size: 16px;
+    height: 20px;
+    font-weight: 600;
+}
+
+#sortcontrol {
+    height: 45px;
+    margin: 34px 0px 17px 0px;
+}
+
+#teacherdetailpanel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container {
+    width: 476px;
+    height: 246px;
+    border: 1px solid black;
+    margin-bottom: 25px;
+}
+.topcontainer{
+    margin: 24px 16px 16px 24px;
+    display: flex;
+ 
+}
+.text-black-16 {
+    color: #222222;
+    font-size: 16px;
+    height: 20px;
+    font-weight: 600;
+}
+.coursedetail{
+    margin-left: 16px;
+}
+.subjectdetails{
+    display: flex;
+}
+
+/*------------------*/
+.upper-foot a{
+    text-decoration: none;
+    border-right: 1px solid #0000001F;
+    padding: 0px 8px;
+    color: #1F7A54;
+    height: 18px;
+    font-weight: 600;
+}
+.upper-foot :last-child{
+    border: none;
+    padding: 0px 6px;
+}
+.upper-foot{
+    text-align: center;
+    height: 34px;
+}
+.foot{
+    height: 74px;
+    background-color: #EEEEEE;
+}
+.lower-foot{
+    background-color: #E0E1E1;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.low{
+    display: flex;
+    justify-content: center;
+    height: 24px;
+    margin: auto 0px;
+}
+
+.low img{
+    border-right: 1px solid #0000001F;
+    padding-right: 10px;
+}
+.low p{
+    margin: 0px;
+    font-size: 12px;
+    height: 15px;
+    font-weight:600;
+    color: #616161;
+    margin: auto 8px;
+}
+

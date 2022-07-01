@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teacher's Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header id="navbar">
+        <img src="images/logo used in header.svg" alt="logo" id="navbar__logo">
+        <ul id="menulist">
+            <li class="menulist__menu menulist__menu--color-white"><a href="#">DASHBOARD</a></li>
+            <li class="menulist__menu"><a href="#">CONTENT</a></li>
+            <li class="menulist__menu"><a href="#">USERS</a></li>
+            <li class="menulist__menu"><a href="#">REPORTS</a></li>
+            <li class="menulist__menu"><a href="#">ADMIN</a></li>
+            <li id="notify" class="menulist__menu"><img src="./images/alerts.svg" alt="notify"></li>
+            <li id="anouncement" class="menulist__menu"><img src="./images/announcements.svg" alt="announcements"></li>
+            <li id="profile" class="menulist__menu"><img src="./images/account_circle.svg" alt="profile"></li>
+        </ul>
+    </header>
+    <main id="main">
+        <header id="courseclass">
+            <li class="subselection subselection--bottom-black">
+                <img src="./images/courses.svg" alt="cource">
+                <p>4</p>
+                <p class="text-black-16">Courses</p>
+            </li>
+            <li  class="subselection">
+                <img src="./images/classes.svg" alt="class">
+                <p>4</p>
+                <p class="text-black-16">Classes</p>
+            </li>
+        </header>
+        <div id="sortcontrol">
+
+        </div>
+
+        <div id="teacherdetailpanel">
+            <div class="container">
+                <div class="topcontainer">
+                    <img src="./images/imageMask-1.svg" alt="physics course">
+                    <div class="coursedetail">
+                        <p class="text-black-16">Acceleration</p>
+                        <div class="subjectdetails">
+                            <p class="subjectdetails__subject">physics</p>
+                            <p class="subjectdetails__grade">grade 7 <span class="extragrade">+2</span></p>
+                        </div>
+                        <div class="coursedetail-syl">
+                            <p><span>4</span> Units <span>18</span> lessons <span>24</span> topics</p>
+                        </div>
+                        <select name="choose" id="coursedetail__teacherselect" class="text-black-16">
+                            <option value="teach1">All Classes</option>
+                            <option value="teach1">Mr. Frank's Class B</option>
+                        </select>
+                        <div class="coursedetail__nostud">
+                            <p>50 students</p>
+                            <p>21-Jan-2020 - 21-Aug-2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container"></div>
+            <div class="container"></div>
+            <div class="container"></div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="upper-foot">
+            <a href="">About</a>
+            <a href="">Contact Us</a>
+        </div>
+        <div class="lower-foot">
+            <div class="low">
+                <img src="./images/logo used in footer.svg" alt="">
+                <p>Copyright © 2020-2021</p>
+                <p style="font-weight: 700;">Zeus Systems Pvt. Ltd.</p>
+                <p>All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

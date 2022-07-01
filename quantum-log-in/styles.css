@@ -1,0 +1,142 @@
+.navbar {
+    display: flex;
+    background-color: #000000;
+    background-image: url(./images/header\ pattern\ image.png);
+    mix-blend-mode:overlay;
+    height: 56px;
+}
+
+.img-logo {
+    height: 47.5px;
+    margin: auto 0px;
+}
+
+.center-body {
+    display: flex;
+    justify-content: center;
+    background-color: #EEEEEE;
+    height: 668px;
+}
+
+.log-in-page {
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    width: 488px;
+    height: 580px;
+    margin-top: 34px;
+    border-top: 4px solid #3AC7EC;
+}
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    height: 798px;
+    margin: 0;
+}
+.log-header{
+    display: flex;
+    justify-content: flex-start;
+}
+.log-header img{
+    margin-left: 32px;
+}
+.log-header p{
+    line-height:28px ;
+    font-size: 24px;
+    font-weight: 600;
+    color: #222222;
+    margin-left: 77px;
+    margin-top: 20px;
+    margin-bottom: 34px;
+}
+.arr-m{
+    margin-right: 20px;
+    padding-bottom: 0px;
+    color: #1F7A54;
+    
+}
+.nav-name{
+    margin: 10px;
+    line-height: 18px;
+}
+.upper-foot a{
+    text-decoration: none;
+    border-right: 1px solid #0000001F;
+    padding: 0px 8px;
+    color: #1F7A54;
+    height: 18px;
+    font-weight: 600;
+}
+.upper-foot :last-child{
+    border: none;
+    padding: 0px 6px;
+}
+.upper-foot{
+    text-align: center;
+    height: 34px;
+}
+.foot{
+    height: 74px;
+    background-color: #EEEEEE;
+}
+.lower-foot{
+    background-color: #E0E1E1;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.low{
+    display: flex;
+    justify-content: center;
+    height: 24px;
+    margin: auto 0px;
+}
+
+.low img{
+    border-right: 1px solid #0000001F;
+    padding-right: 10px;
+}
+.low p{
+    margin: 0px;
+    font-size: 12px;
+    height: 15px;
+    font-weight:600;
+    color: #616161;
+    margin: auto 8px;
+}
+.con-1{
+    width: 424px;
+    border: 0;
+    border-bottom: 1px solid #00000012;
+    font-weight: 500;
+    font-size: 16px;
+    color: #222222;
+    height: 20px;
+}
+.radio-btn input{
+    accent-color: #1F7A54;
+}
+.radio-btn label{
+    font-size: 16px;
+    height: 20px;
+    font-weight: 600;
+}
+.radio-btn #dis, #sch{
+    margin: 0px 8px 0px 32px;
+}
+
+input[type="radio"] {
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+    transform: scale(1.5);
+}
+.center-ele{
+    margin-left: 32px;
+}
+.label-din{
+    font-weight: 600;
+    font-size: 12px;
+    height: 16px;
+    color: #666666;
+}
+

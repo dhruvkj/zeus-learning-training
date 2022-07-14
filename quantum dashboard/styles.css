@@ -5,9 +5,7 @@ body {
 
 #navbar {
     /* background-image: url('./images/header\ pattern\ image.png'); */
-    opacity: 0.8;
     background-color: #000000;
-    mix-blend-mode: overlay;
     height: 56px;
     display: flex;
     justify-content: space-between;
@@ -36,13 +34,68 @@ body {
     font-weight: 600;
     margin: 19px 32px 19px 0px;
 }
+#menu-bars{
+    display: none;
+    cursor: pointer;
+    position: relative;
 
+}
+@media screen and (max-width: 835px) {
+    .menulist__menu{
+        display: none;
+    }
+    #menu-bars{
+        display: block;
+        margin: 19px 24px 19px 0px;
+    }
+    #menu-bars > .material-symbols-outlined {
+        color: #3FD28B;
+    }
+
+    #notify, #anouncement, #profile{
+        display: block;
+    }
+}
 .menulist__menu a {
     color: inherit;
 }
 
+.close-dropdown {
+    display: none;
+}
+
+
+
+.dropdown-menu{
+    position: absolute;
+    right: 20px;
+    top: calc(100% + 1rem);
+    background-color: white;
+    border-radius: .25rem;
+    box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, .1);
+    opacity: 1;
+    transition-delay: 10000ms;
+}
+.sub-menu{
+    /* margin: 15px 0px; */
+    height: 48px;
+    width: 288px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #1F7A54;
+    font-size: 14px;
+    font-weight: 600;
+    padding-left: 16px;
+}
+.sub-menu:hover{
+    background-color: #F3F3F3;
+    cursor: pointer;
+}
+
 #main {
-    margin: 24px 24px 32px 24px;
+    padding: 24px 24px 32px 24px; /*32*/
+    background: #EEEEEE;
 }
 
 #courseclass {
@@ -93,26 +146,35 @@ body {
 }
 
 #teacherdetailpanel{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 476px);
+    /* grid-template-rows: repeat(auto-fit, 246px); */
+    grid-auto-rows: 246px;
+    gap: 25px;
+    justify-content: space-around;
 }
 
 .container {
     width: 476px;
     height: 246px;
-    border: 1px solid black;
-    margin-bottom: 25px;
+    /* border: 1px solid black; */
+    /* margin-bottom: 25px; */
+    background: #FFFFFF;
 }
 .topcontainer{
-    margin: 24px 16px 16px 24px;
+    margin: 24px 16px 0px 24px;
     display: flex;
- 
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(0, 0, 0,12%);
+}
+.topcontainer img {
+    height: 157px;
+    width: 132px;
 }
 .text-black-16 {
     color: #222222;
     font-size: 16px;
-    height: 20px;
+    /* height: 20px; */
     font-weight: 600;
 }
 .coursedetail{
@@ -122,7 +184,88 @@ body {
     display: flex;
 }
 
-/*------------------*/
+.margin-top-null{
+    margin-top: 0px;
+}
+.margin-bottom-7{
+    margin-bottom: 7px;
+}
+.margin-bottom-null{
+    margin-bottom: 0px;
+}
+.coursedetail__teacherselect{
+    margin-top: 18px;
+    border: none;
+    border-bottom: 1px solid #000000;
+    width: 264px;
+}
+.coursedetail__nostud{
+    display: flex;
+}
+.wet-12-8{
+    color: #666666;
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 600;
+    margin-right: 9px;
+    margin-top: 8px;
+}
+.left-pad {
+    border-left: 1px solid rgba(0, 0, 0,18%);
+    padding-left: 9px;
+}
+.extragrade{
+    color: #1F7A54;
+}
+.coursedetail-syl{
+    color: #666666;
+    font-size: 12px;
+    height: 16px;
+    font-weight: 600;
+}
+.coursedetail-syl p span{
+    font-weight: 700;
+    color: #222222;
+}
+.bottomcontainer{
+    height: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+.bottomcontainer img{
+    height: 24px;
+}
+
+.exiperControl::before{
+    content: 'EXPIRED';
+    color: #D80000;
+    background-color: #FFE4E6;
+    position: absolute;
+    font-size: 10px;
+    height: 16PX;
+    font-weight: 600;
+    width: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    position: relative;
+}
+.favourite{
+    color: #EDC900;
+    position: absolute;
+    top: 24px;
+    right: 16px;
+}
+.unfavourite{
+    color: #EEEEEE;
+    position: absolute;
+    top: 24px;
+    right: 16px;
+}
+/*-------------------footer------------------------*/
 .upper-foot a{
     text-decoration: none;
     border-right: 1px solid #0000001F;
@@ -138,6 +281,8 @@ body {
 .upper-foot{
     text-align: center;
     height: 34px;
+    padding-top: auto;
+    background: #EEEEEE;
 }
 .foot{
     height: 74px;
